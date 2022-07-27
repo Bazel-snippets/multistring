@@ -49,7 +49,7 @@ multistring_flag(
     build_setting_default = ["opt"],
     values = [
         "opt",
-        "dbg",
+        # "dbg",
     ],
 )
 

@@ -4,7 +4,7 @@ load("@bazel_skylib//rules:common_settings.bzl", "BuildSettingInfo")
 def _multistring_impl(ctx):
     allowed_values = ctx.attr.values
     given_multistring = ctx.build_setting_value
-    print("given_multistring = " % given_multistring)
+    print("given_multistring = %s" % given_multistring)
 
     if len(allowed_values) == 0 or all([item in allowed_values for item in given_multistring]):
         return BuildSettingInfo(value = given_multistring)
